@@ -59,6 +59,9 @@ WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcm4330_sta.bin n
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+# NFC
+BOARD_HAVE_NFC := true
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_GPS := true
