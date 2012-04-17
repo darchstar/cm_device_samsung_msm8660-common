@@ -103,18 +103,20 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
         system/extras/bugmailer/send_bug:system/bin/send_bug
 endif
 
-# BCM4330 BT Firmware (do we need this?)
+# BT firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8660-common/firmware/bcm4330B1.hcd:system/vendor/firmware/bcm4330B1.hcd
+    device/samsung/msm8660-common/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
-# 8660 Common Firmware
+# EGL firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8660-common/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd \
     device/samsung/msm8660-common/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     device/samsung/msm8660-common/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     device/samsung/msm8660-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     device/samsung/msm8660-common/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    device/samsung/msm8660-common/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+    device/samsung/msm8660-common/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+
+# LCD firmware
+PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
     device/samsung/msm8660-common/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
     device/samsung/msm8660-common/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
@@ -138,7 +140,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/etc/wifi/wl:system/etc/wifi/wl \
     device/samsung/msm8660-common/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
-# Common Ramdisk
+# Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/ramdisk/init.rc:root/init.rc \
     device/samsung/msm8660-common/ramdisk/init.qcom.lpm_boot.sh:root/init.qcom.lpm_boot.sh \
