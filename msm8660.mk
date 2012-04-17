@@ -173,6 +173,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
     device/samsung/msm8660-common/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
 
+# IDC
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8660-common/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/samsung/msm8660-common/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
+
 # Vold fstab
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/configs/vold.fstab:system/etc/vold.fstab
