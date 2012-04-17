@@ -2,7 +2,6 @@
 bin/drexe
 bin/immvibed
 bin/npsmobex
-bin/thermald
 bin/bridgemgrd
 bin/ds_fmc_appd
 bin/playsound
@@ -94,6 +93,13 @@ lib/hw/nfc.qcom.so
 
 # Bluetooh
 bin/brcm_patchram_plus
+
+# Thermald
+bin/thermald
+lib/liboncrpc.so
+lib/libdsm.so
+lib/libthermal_mitigation.so
+lib/libthermal_mitigation_fusion.so
 
 # Misc libs (will sort out later)
 lib/libdiag.so
