@@ -186,6 +186,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/configs/vold.fstab:system/etc/vold.fstab
 
+# Misc init scripts
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8660-common/etc/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
+    device/samsung/msm8660-common/etc/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
+    device/samsung/msm8660-common/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
+
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -194,8 +200,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-PRODUCT_COPY_FILES += \
-    device/samsung/msm8660-common/prebuilt/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
-    device/samsung/msm8660-common/prebuilt/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
-    device/samsung/msm8660-common/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
