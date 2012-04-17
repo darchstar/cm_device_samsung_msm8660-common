@@ -134,6 +134,10 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/etc/wifi/wl:system/etc/wifi/wl \
     device/samsung/msm8660-common/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
+# Hercules/SkyRocket Wifi files
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8660-common/configs/vold.fstab:system/etc/vold.fstab \
+
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
