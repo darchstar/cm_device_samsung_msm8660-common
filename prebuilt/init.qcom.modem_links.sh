@@ -32,6 +32,9 @@
 PATH=/sbin:/system/sbin:/system/bin:/system/xbin
 export PATH
 
+mount -t vfat -o ro,fmask=0133,dmask=0022,shortname=lower /dev/block/mmcblk0p13 /system/etc/firmware/misc   
+mount -t vfat -o ro,fmask=0133,dmask=0022,shortname=lower /dev/block/mmcblk0p17 /system/etc/firmware/misc_mdm  
+
 # Check for images and set up symlinks
 cd /system/etc/firmware/misc/image
 
@@ -69,6 +72,7 @@ ln -s $MISC_MDM/osbl.mbn /system/etc/firmware/osbl.mbn 2>/dev/null
 ln -s $MISC_MDM/efs1.mbn /system/etc/firmware/efs1.mbn 2>/dev/null
 ln -s $MISC_MDM/efs2.mbn /system/etc/firmware/efs2.mbn 2>/dev/null
 ln -s $MISC_MDM/efs3.mbn /system/etc/firmware/efs3.mbn 2>/dev/null
+
 
 cd /
 
