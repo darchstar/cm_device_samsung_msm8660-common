@@ -59,7 +59,7 @@ case "$target" in
 esac
 
 case "$target" in
-    "msm8660_surf" | "SGH-I727" | "SGH-T989" | "SHV-E110S" | "SC-03D"| "msm8660_csfb" | "hercules")
+    "msm8660_surf" | "SGH-I727" | "SGH-T989" | "SHV-E110S" | "SC-03D"| "msm8660_csfb" | "hercules" | "skyrocket")
 	 stop mpdecision
 	 echo 1 > /sys/devices/system/cpu/cpu1/online
 	 echo 1 > /sys/module/rpm_resources/enable_low_power/L2_cache
@@ -132,7 +132,7 @@ esac
 
 # Post-setup services
 case "$target" in
-    "msm8660_surf" | "SGH-I727" | "SGH-T989" | "SHV-E110S" | "SC-03D"| "msm8660_csfb" | "hercules")
+    "msm8660_surf" | "SGH-I727" | "SGH-T989" | "SHV-E110S" | "SC-03D"| "msm8660_csfb" | "hercules" | "skyrocket")
         start mpdecision
         start thermald
     ;;
