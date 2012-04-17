@@ -166,6 +166,13 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
     device/samsung/msm8660-common/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl
 
+# Keychars
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8660-common/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
+    device/samsung/msm8660-common/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
+    device/samsung/msm8660-common/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
+    device/samsung/msm8660-common/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
+
 # Vold fstab
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/configs/vold.fstab:system/etc/vold.fstab
