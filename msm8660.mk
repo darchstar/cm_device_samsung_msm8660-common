@@ -103,6 +103,10 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
         system/extras/bugmailer/send_bug:system/bin/send_bug
 endif
 
+# BCM4330 BT Firmware (do we need this?)
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8660-common/firmware/bcm4330B1.hcd:system/vendor/firmware/bcm4330B1.hcd
+
 # 8660 Common Firmware
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd \
