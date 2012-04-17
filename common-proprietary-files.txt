@@ -62,9 +62,15 @@ lib/libqdp.so
 
 # CND - Related to radio
 bin/cnd
-lib/libcneutils.so
-lib/libcneqmiutils.so
 lib/libxml.so
+
+# CNE
+lib/libcneqmiutils.so
+lib/libcneapiclient.so
+lib/libcneutils.so
+etc/permissions/cneapiclient.xml
+framework/cneapiclient.jar
+framework/com.quicinc.cne.jar
 
 # Vold
 bin/vold
