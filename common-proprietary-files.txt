@@ -59,6 +59,8 @@ lib/libdsi_netctrl.so
 lib/libidl.so
 lib/libnetmgr.so
 lib/libqdp.so
+lib/libdss.so
+lib/libnv.so
 
 # CND - Related to radio
 bin/cnd
