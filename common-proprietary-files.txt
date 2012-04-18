@@ -47,6 +47,7 @@ bin/sec-ril
 bin/qmiproxy
 bin/qmuxd
 bin/rmt_storage
+bin/rild
 lib/libsecril-client.so
 lib/libqmi.so
 lib/libqdi.so
@@ -61,6 +62,8 @@ lib/libnetmgr.so
 lib/libqdp.so
 lib/libdss.so
 lib/libnv.so
+lib/libreference-ril.so
+lib/libril.so
 
 # CND - Related to radio
 bin/cnd
