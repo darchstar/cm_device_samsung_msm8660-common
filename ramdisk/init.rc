@@ -256,9 +256,9 @@ on post-fs-data
     mkdir /data/skaf/share 777 system system    
     mkdir /data/tstore 777 system system
 
-    mkdir /cache/dalvik-cache 0777 system system
-    chown system system /cache/dalvik-cache
-    chmod 0777 /cache/dalvik-cache
+    mkdir /data/dalvik-cache 0771 system system
+    chown system system /data/dalvik-cache
+    chmod 0771 /data/dalvik-cache
 
     mkdir /cache/dalvik-cache 0771 system system
     chown system system /cache/dalvik-cache
