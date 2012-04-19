@@ -47,11 +47,14 @@ bin/sec-ril
 bin/qmiproxy
 bin/qmuxd
 bin/rmt_storage
+bin/rild
 lib/libsecril-client.so
 lib/libqmi.so
 lib/libqdi.so
 lib/libqmiservices.so
 lib/libqueue.so
+lib/libril.so
+lib/libreference-ril.so
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
 lib/libdsutils.so
