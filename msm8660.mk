@@ -64,8 +64,8 @@ PRODUCT_PACKAGES += \
 
 # Sensors/Lights Support
 PRODUCT_PACKAGES += \
-    sensors.$(TARGET_BOOTLOADER_BOARD_NAME) \
-    lights.$(TARGET_BOOTLOADER_BOARD_NAME)
+    sensors.msm8660 \
+    lights.msm8660_overlay
 
 # NFC Support
 PRODUCT_PACKAGES += \
