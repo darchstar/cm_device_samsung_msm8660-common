@@ -80,8 +80,8 @@ PRODUCT_PACKAGES += \
     libdivxdrmdecrypt \
     libmm-omxcore \
     libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
+#    libOmxVdec \
+#    libOmxVenc \
     libstagefrighthw
 
 # Misc

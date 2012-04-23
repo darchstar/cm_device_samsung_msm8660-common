@@ -76,7 +76,7 @@ TARGET_HAVE_BYPASS := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_OVERLAY := true
 TARGET_QCOM_HDMI_OUT := false
-TARGET_GRALLOC_USES_ASHMEM := true
+TARGET_USES_ION := true
 BOARD_EGL_CFG := device/samsung/msm8660-common/configs/egl.cfg
 
 # FM Radio
