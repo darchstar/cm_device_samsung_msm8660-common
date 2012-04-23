@@ -62,6 +62,11 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8660 \
     libaudioutils
 
+# Sensors/Lights Support
+PRODUCT_PACKAGES += \
+    sensors.$(TARGET_BOOTLOADER_BOARD_NAME) \
+    lights.$(TARGET_BOOTLOADER_BOARD_NAME)
+
 # NFC Support
 PRODUCT_PACKAGES += \
     libnfc \
